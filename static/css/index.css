@@ -29,7 +29,6 @@ body {
 
 
 .publication-title {
-  margin-top: -20px;
 }
 
 .publication-banner {
@@ -53,12 +52,12 @@ body {
 }
 
 .publication-authors {
-    color: #000;
     font-family: 'Google Sans', sans-serif;
 }
 
 .publication-venue {
-    color: #000;
+    color: #555;
+    width: fit-content;
     font-weight: bold;
 }
 
@@ -72,7 +71,7 @@ body {
 }
 
 .publication-authors a {
-   color: hsl(204, 60%, 30%) !important;
+   color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a:hover {
@@ -90,7 +89,6 @@ body {
   /*color: #4286f4;*/
 }
 
-
 .publication-video {
     position: relative;
     width: 100%;
@@ -99,10 +97,6 @@ body {
 
     overflow: hidden;
     border-radius: 10px !important;
-}
-
-.publication-image-half {
-  width: 50;
 }
 
 .publication-video iframe {
@@ -160,38 +154,4 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
-}
-
-* {box-sizing: border-box;}
-
-.img-magnifier-container {
-  position:relative;
-}
-
-.img-magnifier-glass {
-  position: absolute;
-  border: 3px solid #000;
-  border-radius: 0%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 200px;
-  height: 200px;
-}
-
-.img-magnifier-glass_init {
-  position: absolute;
-  border: 0px solid #000;
-  border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 0px;
-  height: 0px;
-}
-
-section.banner {
-  background-image: url(../images/overlay.png), url(../images/banner.png);
-  color: #aaa;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: scroll;
 }
