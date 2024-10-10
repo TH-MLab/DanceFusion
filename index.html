@@ -66,7 +66,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -74,7 +74,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -82,14 +82,14 @@
                   </a>
                 </span>
                 <!-- Video Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
                     <span>Video</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
                   <a href="#" class="external-link button is-normal is-rounded is-dark">
@@ -108,7 +108,7 @@
     </div>
   </section>
 
-  <section class="hero teaser">
+  <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
         <div id="carousel_head" class="carousel_head results-carousel">
@@ -130,44 +130,16 @@
             </h2> -->
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video poster="" id="steve" controls muted loop playsinline height="100%">
-              <source src="./static/videos/diff_1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" controls muted loop playsinline height="100%">
-              <source src="./static/videos/diff_2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" controls muted loop playsinline height="100%">
-              <source src="./static/videos/diff_3.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" controls muted loop playsinline height="100%">
-              <source src="./static/videos/diff_4.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" controls muted loop playsinline height="100%">
-              <source src="./static/videos/diff_5.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div>
+          <h2 class="subtitle has-text-centered">
+            Audio-Driven Demo.
+          </h2>
         </div>
       </div>
     </div>
   </section>
+
+
 
 
   <section class="section">
@@ -197,7 +169,7 @@
       <!--/ Abstract. -->
 
       <!-- Paper video. -->
-      <div class="container is-max-desktop">
+      <!-- <div class="container is-max-desktop">
         <div class="hero-body">
           <video id="teaser" autoplay muted loop playsinline controls height="100%">
             <source src="./static/videos/demo_2.mp4" type="video/mp4">
@@ -206,15 +178,47 @@
             Audio-Driven Demo.
           </h2>
         </div>
-      </div>
+      </div> -->
       <!--/ Paper video. -->
+    </div>
+  </section>
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" controls loop playsinline height="100%">
+              <source src="./static/videos/diff_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" controls loop playsinline height="100%">
+              <source src="./static/videos/diff_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" controls loop playsinline height="100%">
+              <source src="./static/videos/diff_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" controls loop playsinline height="100%">
+              <source src="./static/videos/diff_4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" controls loop playsinline height="100%">
+              <source src="./static/videos/diff_5.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
 
   <section class="section">
     <div class="container is-max-desktop">
-
       <!-- Motivation. -->
       <div class="columns is-centered">
         <div class="column is-full-width">
@@ -324,10 +328,10 @@
       </div>
       <!--/ Methodology. -->
 
-      <!-- Results. -->
+      <!-- Experiment Results. -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Results</h2>
+          <h2 class="title is-3">Experiment Results</h2>
 
           <!-- Evaluation Metrics. -->
           <h3 class="title is-4">Evaluation Metrics</h3>
@@ -341,8 +345,33 @@
           </div>
           <br />
           <!--/ Evaluation Metrics. -->
-                    
-          <!-- VAE demos. -->
+          
+          <!-- Results Summary. -->
+          <h3 class="title is-4">Results Summary</h3>
+          <div class="content has-text-justified">
+            <ul>
+              <li>FID: DanceFusion demonstrates significantly lower FID scores compared to baseline models, indicating
+                higher fidelity and realism in generated motions.</li>
+              <li>Diversity: The generated motions exhibit high diversity, showing that the model can produce a wide
+                range of dance styles and movements.</li>
+            </ul>
+            <p>
+              [Insert Table/Graph comparing FID and Diversity scores across different models]
+            </p>
+          </div>
+          <br />
+          <!--/ Results Summary. -->
+
+        </div>
+      </div>
+      <!--/ Experiment Results. -->
+
+      <!-- Demonstrations. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Demonstrations</h2>
+          <!-- VAE Inference . -->
+          <h3 class="title is-4">VAE Inference</h3>
           <div class="tab_row">
             <div class="tab_column">
               <div>
@@ -485,26 +514,86 @@
               </div>
             </div>
           </div>
-          <!--/ VAE demos. -->
-          <!-- Results Summary. -->
-          <h3 class="title is-4">Results Summary</h3>
-          <div class="content has-text-justified">
-            <ul>
-              <li>FID: DanceFusion demonstrates significantly lower FID scores compared to baseline models, indicating
-                higher fidelity and realism in generated motions.</li>
-              <li>Diversity: The generated motions exhibit high diversity, showing that the model can produce a wide
-                range of dance styles and movements.</li>
-            </ul>
-            <p>
-              [Insert Table/Graph comparing FID and Diversity scores across different models]
-            </p>
-          </div>
-          <br />
-          <!--/ Results Summary. -->
+          <br>
 
+          <!-- Diffusion Inference. -->
+          <h3 class="title is-4">Audio-Driven Dance Generation via Diffusion</h3>
+          <div class="tab_row">
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/audio/audio_1.mp3" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_11.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_12.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_13.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_14.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/audio/audio_2.mp3" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_21.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_22.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_23.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab_column">
+              <div>
+                <video poster="" id="shiba" controls playsinline height="100%">
+                  <source src="./static/videos/diff_24.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <!--/ Diffusion Inference. -->
         </div>
       </div>
-      <!--/ Results. -->
+      <!--/ Demonstrations. -->
 
       <!-- Future Work. -->
       <div class="columns is-centered">
@@ -515,9 +604,7 @@
               <li>Optimization for Efficiency: Future work will focus on optimizing the model’s efficiency,
                 reducing computational overhead to enable real-time performance, which is crucial for broader
                 applications such as interactive systems and content creation tools.</li>
-              <li>Support for Multimodal Inputs: Expanding the framework to accept multiple modalities,
-                such as text, speech, or video descriptions, to further enhance its versatility in generating
-                context-aware and user-driven dance motions.</li>
+              <li>Support for Multimodal Inputs: Expanding the framework to accept multiple modalities.</li>
             </ul>
           </div>
           <br />
