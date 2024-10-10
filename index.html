@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for Audio-Driven Dance Motion Reconstruction.">
-  <meta name="keywords" content="DanceFusion, Spatio-Temporal Skeleton Diffusion Transformer, Dance Motion Reconstruction">
+    content="DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for Audio-Driven Dance Motion Reconstruction.">
+  <meta name="keywords"
+    content="DanceFusion, Spatio-Temporal Skeleton Diffusion Transformer, Dance Motion Reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nerfies: Deformable Neural Radiance Fields</title>
 
@@ -13,7 +15,7 @@
   <script>
     window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
+    function gtag () {
       dataLayer.push(arguments);
     }
 
@@ -22,15 +24,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -40,381 +40,386 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for Audio-Driven Dance Motion Reconstruction</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://th-mlab.github.io/DanceFusion/">Li Zhao</a>,</span>
-            <span class="author-block">
-              <a href="https://th-mlab.github.io/DanceFusion/">Zhenmin Lu</a></span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Tsinghua University</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+            <h1 class="title is-1 publication-title">DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for
+              Audio-Driven Dance Motion Reconstruction</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://th-mlab.github.io/DanceFusion/">Li Zhao</a>,</span>
+              <span class="author-block">
+                <a href="https://th-mlab.github.io/DanceFusion/">Zhenmin Lu</a></span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Tsinghua University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <section class="hero teaser">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline controls height="100%">
-        <source src="./static/videos/demo_1.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Audio-Driven Demo.
-      </h2>
-    </div>
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline controls height="100%">
-        <source src="./static/videos/demo_2.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Audio-Driven Demo.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" controls muted loop playsinline height="100%">
-            <source src="./static/videos/diff_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" controls muted loop playsinline height="100%">
-            <source src="./static/videos/diff_2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" controls muted loop playsinline height="100%">
-            <source src="./static/videos/diff_3.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/diff_4.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/diff_5.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            The DanceFusion framework represents an innovative approach to motion generation and reconstruction, 
-            particularly for short-form dance content, such as those popularized on platforms like TikTok. 
-            By integrating a hierarchical Transformer-based Variational Autoencoder (VAE) with diffusion models, 
-            the framework demonstrates robust capabilities in generating realistic and synchronized dance motions. 
-            It addresses the challenges of handling incomplete skeleton data, using advanced masking techniques 
-            and a novel diffusion process that iteratively refines motion sequences. Furthermore, 
-            the framework leverages audio-driven generation to ensure synchronization between motion 
-            and accompanying music. Experimental results highlight the framework’s superior performance in both 
-            reconstruction accuracy and generative diversity, with favorable FID scores. DanceFusion sets a new standard 
-            for the generation of stylized and synchronized dance sequences, offering potential applications in 
-            content creation, virtual reality, and interactive entertainment.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video id="teaser" autoplay muted loop playsinline controls height="100%">
-          <source src="./static/videos/demo_2.mp4"
-                  type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Audio-Driven Demo.
-        </h2>
-      </div>
-    </div>  
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <!-- Motivation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Motivation</h2>
-        <div class="content has-text-justified">
-          <p>
-            Social media platforms have revolutionized how people interact with dance content, 
-            with TikTok as a prominent example. However, data collected from such sources often 
-            suffer from missing joints, occlusions, and noisy skeleton data, which traditional 
-            motion capture systems fail to handle efficiently. DanceFusion addresses these issues 
-            by reconstructing missing or noisy motion sequences while maintaining musical 
-            synchronization, generating realistic and engaging dance motions that can be applied 
-            to content creation, gaming, and virtual avatars.
-          </p>
-          <br/>
-        </div>
-      </div>
-    </div>
-    <!--/ Motivation. -->
+      <div class="container">
+        <div id="carousel_head" class="carousel_head results-carousel">
+          <div class="item item-steve">
+            <video id="teaser" autoplay muted loop playsinline controls height="100%">
+              <source src="./static/videos/demo_1.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Audio-Driven Demo1.
+            </h2>
+          </div>
     
-    <!-- Key Features. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Key Features</h2>
-        <div class="content has-text-justified">
-          <ol>
-            <li>Motion Reconstruction: Utilizing a hierarchical Transformer-based VAE, DanceFusion can accurately 
-              reconstruct motion sequences even when significant portions of the skeleton data are incomplete or noisy.
-              Visual: A comparison of raw and reconstructed dance motion [Insert an image/video of comparison].
-            </li>
-            <li>Audio-Driven Motion Generation: The diffusion model integrated into the framework enables the 
-              generation of dance sequences synchronized with input audio. Rhythmic and stylistic coherence 
-              is maintained throughout the generated sequences.
-              Visual: [Insert a diagram showing how audio features are extracted and used to guide the diffusion process].
-            </li>
-            <li>Robustness to Incomplete Data: Through extensive masking techniques and Transformer encoding, 
-              the model is resilient to varying levels of skeleton incompleteness, delivering robust performance even with missing joints.
-            </li>
-          </ol>
-          <br/>
+          <div class="item item-steve">
+            <video id="teaser" autoplay muted loop playsinline controls height="100%">
+              <source src="./static/videos/demo_2.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Audio-Driven Demo2.
+            </h2>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Key Features. -->
+  </section>
 
-    <!-- Methodology. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Methodology</h2>
 
-        <!-- 1. Spatio-Temporal Encoding. -->
-        <h3 class="title is-4">1. Spatio-Temporal Encoding</h3>
-        <div class="content has-text-justified">
-          <p>
-            DanceFusion adopts a hierarchical Transformer to encode both the spatial relationships 
-            between skeleton joints and the temporal dynamics across frames. Each skeleton joint 
-            is treated as a token, and the sequence of joints forms a spatio-temporal grid that 
-            is processed by the Transformer.
-          </p>
-          <p>
-            Visual: [Insert a diagram of the spatio-temporal encoding process showing how joints are represented as tokens].
-          </p>
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" controls muted loop playsinline height="100%">
+              <source src="./static/videos/diff_1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" controls muted loop playsinline height="100%">
+              <source src="./static/videos/diff_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" controls muted loop playsinline height="100%">
+              <source src="./static/videos/diff_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" controls muted loop playsinline height="100%">
+              <source src="./static/videos/diff_4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" controls muted loop playsinline height="100%">
+              <source src="./static/videos/diff_5.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <br/>
-        <!--/ 1. Spatio-Temporal Encoding. -->
-
-        <!-- 2. Variational Autoencoder (VAE). -->
-        <h3 class="title is-4">2. Variational Autoencoder (VAE)</h3>
-        <div class="content has-text-justified">
-          <p>
-            The VAE captures the latent representations of the skeleton motion, learning a compact 
-            yet expressive latent space. This helps in robust reconstruction and motion generation, 
-            even when skeleton data is incomplete.
-          </p>
-        </div>
-        <br/>
-        <!--/ 2. Variational Autoencoder (VAE). -->
-
-        <!-- 3. Diffusion Process for Skeleton Refinement -->
-        <h3 class="title is-4">3. Diffusion Process for Skeleton Refinement</h3>
-        <div class="content has-text-justified">
-          <p>
-            The diffusion model progressively refines the latent representation of the skeleton 
-            data by iteratively reducing noise and improving fidelity. It is particularly effective 
-            in producing smooth, consistent dance motions when skeleton data is noisy or missing.
-          </p>
-          <p>Equation: Display the formalization of the diffusion loss function here.</p>
-        </div>
-        <br/>
-        <!--/ 3. Diffusion Process for Skeleton Refinement. -->
-
-        <!-- 4. Audio-Driven Generation -->
-        <h3 class="title is-4">4. Audio-Driven Generation</h3>
-        <div class="content has-text-justified">
-          <p>
-            The diffusion process also integrates audio features, ensuring that the generated 
-            motions align with musical cues, producing dance motions that are not only visually 
-            coherent but rhythmically synchronized with the input audio.
-        </div>
-        <br/>
-        <!--/ 4. Audio-Driven Generation. -->
       </div>
     </div>
-    <!--/ Methodology. -->
+  </section>
 
-    <!-- Results. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
 
-        <!-- Evaluation Metrics. -->
-        <h3 class="title is-4">Evaluation Metrics</h3>
-        <div class="content has-text-justified">
-          <ul>
-            <li>FID (Fréchet Inception Distance): Used to measure the quality of generated dance sequences by comparing their distribution to real dance motions.</li>
-            <li>Diversity Score: Quantifies the variation and uniqueness of generated sequences to ensure that outputs are not repetitive.</li>
-          </ul>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The DanceFusion framework represents an innovative approach to motion generation and reconstruction,
+              particularly for short-form dance content, such as those popularized on platforms like TikTok.
+              By integrating a hierarchical Transformer-based Variational Autoencoder (VAE) with diffusion models,
+              the framework demonstrates robust capabilities in generating realistic and synchronized dance motions.
+              It addresses the challenges of handling incomplete skeleton data, using advanced masking techniques
+              and a novel diffusion process that iteratively refines motion sequences. Furthermore,
+              the framework leverages audio-driven generation to ensure synchronization between motion
+              and accompanying music. Experimental results highlight the framework’s superior performance in both
+              reconstruction accuracy and generative diversity, with favorable FID scores. DanceFusion sets a new
+              standard
+              for the generation of stylized and synchronized dance sequences, offering potential applications in
+              content creation, virtual reality, and interactive entertainment.
+            </p>
+          </div>
         </div>
-        <br/>
-        <!--/ Evaluation Metrics. -->
-
-        <!-- Results Summary. -->
-        <h3 class="title is-4">Results Summary</h3>
-        <div class="content has-text-justified">
-          <ul>
-            <li>FID: DanceFusion demonstrates significantly lower FID scores compared to baseline models, indicating higher fidelity and realism in generated motions.</li>
-            <li>Diversity: The generated motions exhibit high diversity, showing that the model can produce a wide range of dance styles and movements.</li>
-          </ul>
-          <p>
-            [Insert Table/Graph comparing FID and Diversity scores across different models]
-          </p>
-        </div>
-        <br/>
-        <!--/ Results Summary. -->
-
       </div>
-    </div>
-    <!--/ Results. -->
+      <!--/ Abstract. -->
 
-    <!-- Future Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Future Work</h2>
-        <div class="content has-text-justified">
-          <ul>
-            <li>Optimization for Efficiency: Future work will focus on optimizing the model’s efficiency, 
-              reducing computational overhead to enable real-time performance, which is crucial for broader 
-              applications such as interactive systems and content creation tools.</li>
-            <li>Support for Multimodal Inputs: Expanding the framework to accept multiple modalities, 
-              such as text, speech, or video descriptions, to further enhance its versatility in generating 
-              context-aware and user-driven dance motions.</li>
-          </ul>
+      <!-- Paper video. -->
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video id="teaser" autoplay muted loop playsinline controls height="100%">
+            <source src="./static/videos/demo_2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Audio-Driven Demo.
+          </h2>
         </div>
-        <br/>
       </div>
+      <!--/ Paper video. -->
     </div>
-    <!--/ Future Work. -->
-
-  </div>
-</section>
+  </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{xxxxxx,
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Motivation. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Motivation</h2>
+          <div class="content has-text-justified">
+            <p>
+              Social media platforms have revolutionized how people interact with dance content,
+              with TikTok as a prominent example. However, data collected from such sources often
+              suffer from missing joints, occlusions, and noisy skeleton data, which traditional
+              motion capture systems fail to handle efficiently. DanceFusion addresses these issues
+              by reconstructing missing or noisy motion sequences while maintaining musical
+              synchronization, generating realistic and engaging dance motions that can be applied
+              to content creation, gaming, and virtual avatars.
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+      <!--/ Motivation. -->
+
+      <!-- Key Features. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Key Features</h2>
+          <div class="content has-text-justified">
+            <ol>
+              <li>Motion Reconstruction: Utilizing a hierarchical Transformer-based VAE, DanceFusion can accurately
+                reconstruct motion sequences even when significant portions of the skeleton data are incomplete or
+                noisy.
+                Visual: A comparison of raw and reconstructed dance motion [Insert an image/video of comparison].
+              </li>
+              <li>Audio-Driven Motion Generation: The diffusion model integrated into the framework enables the
+                generation of dance sequences synchronized with input audio. Rhythmic and stylistic coherence
+                is maintained throughout the generated sequences.
+                Visual: [Insert a diagram showing how audio features are extracted and used to guide the diffusion
+                process].
+              </li>
+              <li>Robustness to Incomplete Data: Through extensive masking techniques and Transformer encoding,
+                the model is resilient to varying levels of skeleton incompleteness, delivering robust performance even
+                with missing joints.
+              </li>
+            </ol>
+            <br />
+          </div>
+        </div>
+      </div>
+      <!--/ Key Features. -->
+
+      <!-- Methodology. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Methodology</h2>
+
+          <!-- 1. Spatio-Temporal Encoding. -->
+          <h3 class="title is-4">1. Spatio-Temporal Encoding</h3>
+          <div class="content has-text-justified">
+            <p>
+              DanceFusion adopts a hierarchical Transformer to encode both the spatial relationships
+              between skeleton joints and the temporal dynamics across frames. Each skeleton joint
+              is treated as a token, and the sequence of joints forms a spatio-temporal grid that
+              is processed by the Transformer.
+            </p>
+            <p>
+              Visual: [Insert a diagram of the spatio-temporal encoding process showing how joints are represented as
+              tokens].
+            </p>
+          </div>
+          <br />
+          <!--/ 1. Spatio-Temporal Encoding. -->
+
+          <!-- 2. Variational Autoencoder (VAE). -->
+          <h3 class="title is-4">2. Variational Autoencoder (VAE)</h3>
+          <div class="content has-text-justified">
+            <p>
+              The VAE captures the latent representations of the skeleton motion, learning a compact
+              yet expressive latent space. This helps in robust reconstruction and motion generation,
+              even when skeleton data is incomplete.
+            </p>
+          </div>
+          <br />
+          <!--/ 2. Variational Autoencoder (VAE). -->
+
+          <!-- 3. Diffusion Process for Skeleton Refinement -->
+          <h3 class="title is-4">3. Diffusion Process for Skeleton Refinement</h3>
+          <div class="content has-text-justified">
+            <p>
+              The diffusion model progressively refines the latent representation of the skeleton
+              data by iteratively reducing noise and improving fidelity. It is particularly effective
+              in producing smooth, consistent dance motions when skeleton data is noisy or missing.
+            </p>
+            <p>Equation: Display the formalization of the diffusion loss function here.</p>
+          </div>
+          <br />
+          <!--/ 3. Diffusion Process for Skeleton Refinement. -->
+
+          <!-- 4. Audio-Driven Generation -->
+          <h3 class="title is-4">4. Audio-Driven Generation</h3>
+          <div class="content has-text-justified">
+            <p>
+              The diffusion process also integrates audio features, ensuring that the generated
+              motions align with musical cues, producing dance motions that are not only visually
+              coherent but rhythmically synchronized with the input audio.
+          </div>
+          <br />
+          <!--/ 4. Audio-Driven Generation. -->
+        </div>
+      </div>
+      <!--/ Methodology. -->
+
+      <!-- Results. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Results</h2>
+
+          <!-- Evaluation Metrics. -->
+          <h3 class="title is-4">Evaluation Metrics</h3>
+          <div class="content has-text-justified">
+            <ul>
+              <li>FID (Fréchet Inception Distance): Used to measure the quality of generated dance sequences by
+                comparing their distribution to real dance motions.</li>
+              <li>Diversity Score: Quantifies the variation and uniqueness of generated sequences to ensure that outputs
+                are not repetitive.</li>
+            </ul>
+          </div>
+          <br />
+          <!--/ Evaluation Metrics. -->
+
+          <!-- Results Summary. -->
+          <h3 class="title is-4">Results Summary</h3>
+          <div class="content has-text-justified">
+            <ul>
+              <li>FID: DanceFusion demonstrates significantly lower FID scores compared to baseline models, indicating
+                higher fidelity and realism in generated motions.</li>
+              <li>Diversity: The generated motions exhibit high diversity, showing that the model can produce a wide
+                range of dance styles and movements.</li>
+            </ul>
+            <p>
+              [Insert Table/Graph comparing FID and Diversity scores across different models]
+            </p>
+          </div>
+          <br />
+          <!--/ Results Summary. -->
+
+        </div>
+      </div>
+      <!--/ Results. -->
+
+      <!-- Future Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Future Work</h2>
+          <div class="content has-text-justified">
+            <ul>
+              <li>Optimization for Efficiency: Future work will focus on optimizing the model’s efficiency,
+                reducing computational overhead to enable real-time performance, which is crucial for broader
+                applications such as interactive systems and content creation tools.</li>
+              <li>Support for Multimodal Inputs: Expanding the framework to accept multiple modalities,
+                such as text, speech, or video descriptions, to further enhance its versatility in generating
+                context-aware and user-driven dance motions.</li>
+            </ul>
+          </div>
+          <br />
+        </div>
+      </div>
+      <!--/ Future Work. -->
+
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{xxxxxx,
   author    = {Zhao, Li and Lu, Zhenmin},
   title     = {DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for Audio-Driven Dance Motion Reconstruction},
   journal   = {},
   year      = {2024},
 }</code></pre>
-  </div>
-</section>
+    </div>
+  </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
