@@ -155,3 +155,15 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.tab_row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tab_column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
