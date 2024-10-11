@@ -248,13 +248,10 @@
               <li>Motion Reconstruction: Utilizing a hierarchical Transformer-based VAE, DanceFusion can accurately
                 reconstruct motion sequences even when significant portions of the skeleton data are incomplete or
                 noisy.
-                Visual: A comparison of raw and reconstructed dance motion [Insert an image/video of comparison].
               </li>
               <li>Audio-Driven Motion Generation: The diffusion model integrated into the framework enables the
                 generation of dance sequences synchronized with input audio. Rhythmic and stylistic coherence
                 is maintained throughout the generated sequences.
-                Visual: [Insert a diagram showing how audio features are extracted and used to guide the diffusion
-                process].
               </li>
               <li>Robustness to Incomplete Data: Through extensive masking techniques and Transformer encoding,
                 the model is resilient to varying levels of skeleton incompleteness, delivering robust performance even
@@ -272,18 +269,32 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Methodology</h2>
 
+          <!-- 0. DanceFusion Overview. -->
+          <!-- <h3 class="title is-4">1. Spatio-Temporal Encoding</h3> -->
+          <div class="content has-text-centered">
+            <img src="./static/images/dancefusion-framework.jpg" width="75%">
+          </div> 
+          <div class="content has-text-justified">
+            <p>
+              DanceFusion framework, which integrates a hierarchical spatio-temporal 
+              Transformer, Variational Autoencoder (VAE), and a diffusion model to achieve robust 
+              motion reconstruction and audio-driven dance motion generation.
+            </p>
+          </div>
+          <br />
+          <!--/ 0. DanceFusion Overview. -->
+
           <!-- 1. Spatio-Temporal Encoding. -->
           <h3 class="title is-4">1. Spatio-Temporal Encoding</h3>
+          <div class="content has-text-centered">
+            <img src="./static/images/spatio-temporal-encoding.jpg" width="75%">
+          </div>
           <div class="content has-text-justified">
             <p>
               DanceFusion adopts a hierarchical Transformer to encode both the spatial relationships
               between skeleton joints and the temporal dynamics across frames. Each skeleton joint
               is treated as a token, and the sequence of joints forms a spatio-temporal grid that
               is processed by the Transformer.
-            </p>
-            <p>
-              Visual: [Insert a diagram of the spatio-temporal encoding process showing how joints are represented as
-              tokens].
             </p>
           </div>
           <br />
@@ -309,7 +320,6 @@
               data by iteratively reducing noise and improving fidelity. It is particularly effective
               in producing smooth, consistent dance motions when skeleton data is noisy or missing.
             </p>
-            <p>Equation: Display the formalization of the diffusion loss function here.</p>
           </div>
           <br />
           <!--/ 3. Diffusion Process for Skeleton Refinement. -->
@@ -595,22 +605,6 @@
       </div>
       <!--/ Demonstrations. -->
 
-      <!-- Future Work. -->
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Future Work</h2>
-          <div class="content has-text-justified">
-            <ul>
-              <li>Optimization for Efficiency: Future work will focus on optimizing the model’s efficiency,
-                reducing computational overhead to enable real-time performance, which is crucial for broader
-                applications such as interactive systems and content creation tools.</li>
-              <li>Support for Multimodal Inputs: Expanding the framework to accept multiple modalities.</li>
-            </ul>
-          </div>
-          <br />
-        </div>
-      </div>
-      <!--/ Future Work. -->
 
 
 
