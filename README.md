@@ -1,4 +1,4 @@
-# Nerfies
+# DanceFusion
 
 This is the repository that contains source code for the [DanceFusion website](https://th-mlab.github.io/DanceFusion/).
 
