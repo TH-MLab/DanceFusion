@@ -1,15 +1,15 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [DanceFusion website](https://th-mlab.github.io/DanceFusion/).
 
-If you find Nerfies useful for your work please cite:
+If you find DanceFusion useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
+@article{dancefusion2024,
+        author    = {Zhao, Li and Lu, Zhengmin},
+        title     = {DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for Audio-Driven Dance Motion Reconstruction},
+        journal   = {},
+        year      = {2024},
+      }
 ```
 
 # Website License
