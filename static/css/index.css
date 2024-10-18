@@ -171,3 +171,7 @@ body {
 .tab_column-mp3{
   margin-top: 50%;
 }
+
+.tab_column-mp3 audio{
+  width: 180px;
+}
