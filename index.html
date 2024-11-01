@@ -330,17 +330,17 @@
           <h2 class="title is-3">Key Features</h2>
           <div class="content has-text-justified">
             <ol>
-              <li>Motion Reconstruction: Utilizing a hierarchical Transformer-based VAE, DanceFusion can accurately
-                reconstruct motion sequences even when significant portions of the skeleton data are incomplete or
-                noisy.
+              <li>Hierarchical Spatio-Temporal VAE for Motion Reconstruction: We introduce a hierarchical Transformer-based 
+                Variational Autoencoder (VAE) that integrates spatio-temporal encoding to effectively capture both spatial joint 
+                configurations and temporal movement dynamics. This integration enhances the model's ability to reconstruct 
+                incomplete and noisy skeleton data with high accuracy
               </li>
-              <li>Audio-Driven Motion Generation: The diffusion model integrated into the framework enables the
-                generation of dance sequences synchronized with input audio. Rhythmic and stylistic coherence
-                is maintained throughout the generated sequences.
+              <li>Integration of Diffusion Models for Audio-Driven Motion Generation: By incorporating diffusion models, 
+                DanceFusion iteratively refines motion sequences, significantly improving motion realism and ensuring precise 
+                synchronization with audio inputs.
               </li>
-              <li>Robustness to Incomplete Data: Through extensive masking techniques and Transformer encoding,
-                the model is resilient to varying levels of skeleton incompleteness, delivering robust performance even
-                with missing joints.
+              <li>Advanced Masking Techniques: We develop sophisticated masking strategies to manage missing or unreliable 
+                joint data, allowing the model to prioritize and accurately reconstruct available information.
               </li>
             </ol>
             <br />
@@ -361,63 +361,73 @@
           </div> 
           <div class="content has-text-justified">
             <p>
-              DanceFusion framework, which integrates a hierarchical spatio-temporal 
-              Transformer, Variational Autoencoder (VAE), and a diffusion model to achieve robust 
-              motion reconstruction and audio-driven dance motion generation.
+              In this chapter, we present the DanceFusion framework, which integrates a hierarchical Spatio-Temporal 
+              Transformer-based Variational Autoencoder (VAE) with a diffusion model to achieve robust motion reconstruction 
+              and audio-driven dance motion generation. The input to the model is a sequence of skeleton joints extracted from TikTok 
+              dance videos, often containing missing or noisy data. The framework aims to refine these skeleton sequences through a 
+              series of denoising steps, ensuring that the generated or reconstructed motion is temporally consistent and aligned 
+              with accompanying audio.
             </p>
           </div>
           <br />
           <!--/ 0. DanceFusion Overview. -->
 
           <!-- 1. Spatio-Temporal Encoding. -->
-          <h3 class="title is-4">1. Spatio-Temporal Encoding</h3>
+          <h3 class="title is-4">1. Hierarchical Spatio-Temporal VAE Encoding</h3>
           <div class="content has-text-centered">
             <img src="./static/images/spatio-temporal-encoding.jpg" width="75%">
           </div>
           <div class="content has-text-justified">
             <p>
-              DanceFusion adopts a hierarchical Transformer to encode both the spatial relationships
-              between skeleton joints and the temporal dynamics across frames. Each skeleton joint
-              is treated as a token, and the sequence of joints forms a spatio-temporal grid that
-              is processed by the Transformer.
+              The DanceFusion framework introduces a hierarchical Transformer-based Variational Autoencoder (VAE) that integrates 
+              spatio-temporal encoding to capture the spatial and temporal information inherent in skeleton sequences. 
+              Unlike image-based models like ViViT, which processes grid patches from static images, we treat each skeleton joint as a token, 
+              and the sequence of joints over time forms a spatio-temporal grid. Each joint in the skeleton is encoded based on its spatial 
+              relationship with other joints, and the temporal sequence of these joint positions is fed into the Transformer for processing.
             </p>
           </div>
           <br />
           <!--/ 1. Spatio-Temporal Encoding. -->
 
           <!-- 2. Variational Autoencoder (VAE). -->
-          <h3 class="title is-4">2. Variational Autoencoder (VAE)</h3>
+          <h3 class="title is-4">2. Diffusion Model for Audio-Driven Motion Generation</h3>
+          <div class="content has-text-centered">
+            <img src="./static/images/audio-driven-diffusion-process.jpg" width="75%">
+          </div>
           <div class="content has-text-justified">
             <p>
-              The VAE captures the latent representations of the skeleton motion, learning a compact
-              yet expressive latent space. This helps in robust reconstruction and motion generation,
-              even when skeleton data is incomplete.
+              Diffusion models have gained prominence in the generation of complex data sequences, demonstrating exceptional ability 
+              in synthesizing realistic and contextually accurate motion sequences. In DanceFusion, we leverage diffusion models to refine 
+              skeleton sequences and synchronize dance movements with audio inputs, thus enhancing both the visual quality and the auditory 
+              alignment of generated dance sequences.
             </p>
           </div>
           <br />
           <!--/ 2. Variational Autoencoder (VAE). -->
 
           <!-- 3. Diffusion Process for Skeleton Refinement -->
-          <h3 class="title is-4">3. Diffusion Process for Skeleton Refinement</h3>
+          <h3 class="title is-4">3. Handling Incomplete Skeleton Data</h3>
           <div class="content has-text-justified">
             <p>
-              The diffusion model progressively refines the latent representation of the skeleton
-              data by iteratively reducing noise and improving fidelity. It is particularly effective
-              in producing smooth, consistent dance motions when skeleton data is noisy or missing.
+              One of the major challenges in motion reconstruction is handling incomplete skeleton data, where certain joints may be missing 
+              due to occlusions or sensor noise. In the DanceFusion framework, this is addressed through a masking mechanism applied during 
+              the encoding phase. Each joint in the input sequence is either present or missing, and this information is captured in a binary mask. 
+              The mask prevents the model from considering missing joints during the spatial encoding process, ensuring that only reliable joints 
+              contribute to the final representation.
             </p>
           </div>
           <br />
           <!--/ 3. Diffusion Process for Skeleton Refinement. -->
 
           <!-- 4. Audio-Driven Generation -->
-          <h3 class="title is-4">4. Audio-Driven Generation</h3>
+          <!-- <h3 class="title is-4">4. Audio-Driven Generation</h3>
           <div class="content has-text-justified">
             <p>
               The diffusion process also integrates audio features, ensuring that the generated
               motions align with musical cues, producing dance motions that are not only visually
               coherent but rhythmically synchronized with the input audio.
           </div>
-          <br />
+          <br /> -->
           <!--/ 4. Audio-Driven Generation. -->
         </div>
       </div>
