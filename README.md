@@ -7,7 +7,7 @@ If you find DanceFusion useful for your work please cite:
 @article{dancefusion2024,
         author    = {Zhao, Li and Lu, Zhengmin},
         title     = {DanceFusion: A Spatio-Temporal Skeleton Diffusion Transformer for Audio-Driven Dance Motion Reconstruction},
-        journal   = {},
+        journal   = {arXiv preprint arXiv:2411.04646},
         year      = {2024},
       }
 ```
